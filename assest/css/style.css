@@ -1,0 +1,481 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: white;
+    margin: 0;
+}
+        
+.hero {
+    border-radius: 40px;
+    margin: auto;
+    padding-top: 80px;
+    width: 97%;
+    background-color: #141414;
+    text-align: center;
+}
+
+.cnt-btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ca6c29;
+    border: none;
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    padding: 30px;
+}
+
+.nav {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.nav a {
+    color: black;
+    margin: 0 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.nav a:hover {
+    text-decoration: underline solid #ff6600;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 70px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #aaa;
+    max-width: 600px;
+    margin: 20px auto 40px;
+    line-height: 1.6;
+}
+
+.container {
+    justify-content: space-around;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    position: relative;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+    width: calc(50% - 40px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project img {
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+.project p {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* About section */
+.about {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+}
+
+.about h2{
+    color: #333;
+}
+
+
+.about-me {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+
+.image-container {
+    flex-shrink: 0;
+    width: 170px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -200px;
+    /* margin-left: 50px; */
+    margin-top: 95px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.text-container {
+    /* margin-right: 200px; */
+    padding-left: 400px;
+    width: 700px;
+    /* padding-right: 40px; */
+}
+
+
+
+.text-container p {
+    font-size: 40px;
+    line-height: 1.2;
+    color: black;
+    font-weight: 500;
+    text-align: start;
+
+}
+
+/* Container styling */
+.container1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    border-radius: 40px;
+    width: 97%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    
+}
+
+/* Title styling */
+.pro {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+/* Item container styling */
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Text styling */
+.hover-text {
+    font-size: 85px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    line-height: 0;
+}
+
+/* Popout image styling */
+.popout-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease, right 0.3s ease;
+    width: 80px;
+    height: auto;
+}
+
+/* Initial positioning of images */
+#image1 {
+    left: 100px;
+}
+
+#image2 {
+    right: 100px;
+}
+
+#image3 {
+    left: 100px;
+}
+
+#image4 {
+    right: 100px;
+}
+
+
+/* Carousel styling */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    max-width: 1100px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+}
+  
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* width: 300%; */
+}
+  
+  /* Slide styling */
+.carousel-item {
+    min-width: 100%;
+  }
+  
+.carousel-image {
+    position: relative;
+    width: 100%;
+  }
+  
+.carousel-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Text overlay styling (absolute inside relative image container) */
+  .carousel-text {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: #ee8234;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 60%;
+  }
+  
+  .carousel-text .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .carousel-text .project-type {
+    font-size: 1rem;
+    color: #cccccc;
+  }
+  
+  /* Indicator styling */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .indicator.active {
+    background-color: #ff6600;
+  }
+  
+  /* Control button styling */
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-control.left {
+    left: 10px;
+  }
+  
+  .carousel-control.right {
+    right: 10px;
+  }
+  
+  .carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+.left {
+    color: white;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: left;
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+.footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+.contact-button-container {
+    margin-top: 20px;
+  }
+
+.contact-button .arrow {
+    display: inline-block;
+    background-color: white;
+    color: #ff7e47;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    transition: all 0.3s ease;
+  }
+  
+.contact-button:hover {
+    color: #ff7e47;
+}
+  
+.contact-button:hover .arrow {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: white;
+    color: #ff7e47;
+    right: 0;
+    padding: 10px 20px;
+  }
+  
+.have {
+    text-align: center;
+    font-size: 50px;
+}
+
+.profile p {
+    text-align: justify;
+    font-size: 24px;
+}
+
+  
+.arrow-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* overflow: hidden; */
+    /* background-color: #ff7e47; */
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .arrow {
+    color: #ff6600;
+    font-size: 18px;
+    margin-right: 10px;
+    position: relative;
+    background-color: white;
+    border-radius: 50px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .hidden-text {
+    color: #ff6600;
+    background-color: white;
+    border-radius: 0 30px 30px 0;
+    overflow: hidden;
+    width: 150px;
+    height: 30px;
+    margin-left: -20px;
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+  }
+  
+.project p{
+    margin-left: 340px;
+    margin-bottom: -8px;
+    font-size: 30px;
+}
